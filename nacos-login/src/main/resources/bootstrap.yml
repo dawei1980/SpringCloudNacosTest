@@ -2,6 +2,8 @@ server:
   port: 8083
 
 spring:
+  profiles:
+    active: dev
   application:
     name: nacos-config-login
   cloud:
@@ -12,4 +14,4 @@ spring:
       config:
         server-addr: 127.0.0.1:8848 #配置中心连接地址
         group: DEFAULT_GROUP #分组
-        file-extension: yaml #类型
+        file-extension: yml #类型
