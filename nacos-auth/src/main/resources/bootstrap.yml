@@ -1,0 +1,17 @@
+server:
+  port: 8084
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: nacos-config-auth
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        enabled: true
+      config:
+        server-addr: 127.0.0.1:8848 #配置中心连接地址
+        group: DEFAULT_GROUP #分组
+        file-extension: yml #类型
