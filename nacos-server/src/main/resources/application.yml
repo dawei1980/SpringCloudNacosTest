@@ -8,7 +8,7 @@ spring:
     nacos:
       config:
         server-addr: 127.0.0.1:8848
-        file-extension: properties,yml,yaml # 假如不配置，则nacos远程配置文件的后缀为.properties,.yml,.yaml
+        file-extension: yml # 假如不配置，则nacos远程配置文件的后缀为.yml
         prefix: nacosserver
       discovery:
         server-addr: 127.0.0.1:8848

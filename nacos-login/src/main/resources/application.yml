@@ -1,15 +1,3 @@
-server:
-  port: 8083
-
 spring:
-  application:
-    name: nacos-login
-  cloud:
-    nacos:
-      discovery:
-        server-addr: 127.0.0.1:8848
-        enabled: true
-      config:
-        server-addr: 127.0.0.1:8848 #配置中心连接地址
-        group: DEFAULT_GROUP #分组
-        file-extension: properties,yml,yaml #类型
+  profiles:
+    active: dev
